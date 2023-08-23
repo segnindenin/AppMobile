@@ -127,7 +127,7 @@ class CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
         _isRecording = true;
       });
       await cameraController?.startVideoRecording();
-      await Future.delayed(const Duration(seconds: 5));
+      await Future.delayed(const Duration(seconds: 45));
       final video = await cameraController?.stopVideoRecording();
       setState(() {
         _isRecording = false;
